@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cxiao",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.36",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "http": "0.0.0"
+  }
 }
