@@ -9,9 +9,12 @@
   "author": "Cxiao",
   "license": "ISC",
   "dependencies": {
+    "apicache": "^1.2.3",
     "big-integer": "^1.6.36",
     "crypto": "^1.0.1",
     "express": "^4.16.3",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0"
   }
 }
