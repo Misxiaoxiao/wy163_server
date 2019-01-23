@@ -14,7 +14,7 @@ module.exports = (req, res, createWebAPIRequest, request) => {
 
   createWebAPIRequest(
     'music.163.com',
-    '/weapi/login',
+    '/weapi/login/cellphone',
     'POST',
     data,cookie,
     (music_req, cookie) => {
