@@ -1,16 +1,15 @@
-// 新歌速递
+// 热门歌手
 module.exports = (req, res, createWebAPIRequest, request) => {
   const cookie = req.get("Cookie") ? req.get("Cookie") : "";
   const data = {
-    csrf_token: "",
-    areaId: req.query.type || 0,
-    // limit: req.query.limit || 100,
-    // offset: req.query.offset || 0,
+    offset: req.query.offset || 0,
     total: true,
+    limit: req.query.limit || 50,
+    csrf_token: ""
   };
   createWebAPIRequest(
     "music.163.com",
-    "/weapi/v1/discovery/new/songs",
+    '/weapi/artist/top',
     "POST",
     data,
     cookie,
